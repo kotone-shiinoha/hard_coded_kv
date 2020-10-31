@@ -1,0 +1,17 @@
+[package]
+name = "swagger_macro"
+version = "0.1.0"
+authors = ["kotone-shiinoha <kotone.shiinoha@protonmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc_macro = true
+
+[dependencies]
+serde = "1"
+serde_yaml = "0.8.13"
+
+hard_coded_kv = { path = "../../../" }
+
